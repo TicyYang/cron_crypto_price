@@ -1,4 +1,4 @@
-# Automated Cryptocurrency Price Crawling Program with Containerization  
+# Automatically Execute Containerized Cryptocurrency Price Crawling Program via Linux Crontab  
 ## Environment  
 - Host: VMware Workstation 17 Player + Ubuntu 22.04  
 - Files Description  
