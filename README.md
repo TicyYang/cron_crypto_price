@@ -1,13 +1,18 @@
-主機環境為Ubuntu 22.04  
+# Automated Cryptocurrency Price Crawling Program with Containerization  
+## Environment  
+- Host: VMware Workstation 17 Player + Ubuntu 22.04  
+- Files Description  
+- Dockerfile:  
+  - Base image: python:3.10-alpine  
+  - Timezone set to Taipei  
+- docker_build.sh: A bash script used to build the Docker image and start the container. It also defines the directory is mounted into a container.
+- get_crypto_price.py: Python web scraping script utilizing pandas, requests, BeautifulSoup  
 
+## Automated Scheduling with Linux Commands
+Schedule automatic execution using the following command::  
 
-Dockerfile設置包含：  
-基礎image為python:3.10-alpine  
-時區設為台北  
+    crontab -e  
 
+Add the following line to execute the container every 10 minutes:  
 
-
-
-自動排程透過以下指令設置：  
-crontab -e  
-*/10 * * * * docker start crypto_ctr
+    */10 * * * * docker start crypto_ctr
