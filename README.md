@@ -1,5 +1,5 @@
 [![Docker Repository on Quay](https://quay.io/repository/ticy_y/get_crypto_price/status "Docker Repository on Quay")](https://quay.io/repository/ticy_y/get_crypto_price)
-# Automate Cryptocurrency Price Crawling (using Docker and Linux Crontab)
+# Automate Cryptocurrency Price Crawling (using Crontab)
 ## Environment
 - Host: Ubuntu 22.04
 
